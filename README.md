@@ -2,7 +2,7 @@
 
 1. A data-centric chip design agent framework for Verilog code generation [https://dl.acm.org/doi/10.1145/3727980].
 
-  ACM Trans 2025
+   ACM Trans 2025
 
   Recent advances in large language models (LLMs) have demonstrated significant potential for automated hardware description language (HDL) code generation from high-level specifications. However, two critical challenges limit further progress in this domain: the scarcity of quality Verilog training data and the inability of current approaches to generate RTL code optimized for power, performance, and area (PPA) metrics.
 This paper presents a comprehensive data-centric framework that addresses these limitations through innovations in both pre-fine-tuning data preparation and after-fine-tuning optimization strategies. In the pre-fine-tuning phase, we tackle the data scarcity problem with an automated design-data augmentation framework that generates high-volume, high-quality natural language specifications aligned with corresponding Verilog code and EDA scripts. Our approach creates a complete RTL-level feedback loop by augmenting EDA scripts, RTL code, and EDA tool feedback. In the after-fine-tuning phase, we focus on generating PPA-aware RTL code through a novel search and prompt framework. Our approach implements iterative filtering and selection of LLM-generated Verilog variants while providing high-quality predefined prompts, including composition and interface specifications.
